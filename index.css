@@ -1,0 +1,292 @@
+.navigation {
+  display: flex;
+  font-size: 20px;
+}
+body {
+  background-color: rgb(39, 38, 38);
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* font-family: 'Hachi Maru Pop', cursive; */
+  font-family: "Inter", sans-serif;
+}
+li {
+  color: rgb(255, 255, 255);
+  /* margin: 5px; */
+  padding: 20px;
+  list-style: none;
+  position: relative;
+  bottom: 15px;
+  font-family: "Inter", sans-serif;
+}
+li img {
+  width: 45px;
+  height: 45px;
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 23px;
+  position: relative;
+  bottom: 10px;
+}
+section {
+  color: rgb(255, 255, 255);
+  margin: 3px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+}
+h1 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+}
+p {
+  position: relative;
+  bottom: 30px;
+  font-family: "Inter", sans-serif;
+}
+.button {
+  position: relative;
+  bottom: 60px;
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 18px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+header::before {
+  background: url("back.jpeg") no-repeat center center/cover;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.3;
+  width: 100%;
+  height: 400px;
+}
+nav::before {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.3;
+  width: 100%;
+  height: 70px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  li {
+    font-size: 12px;
+    width: 15px;
+    position: relative;
+    left: -15px;
+  }
+  section {
+    position: relative;
+    top: 0px;
+    width: 300px;
+    right: 270px;
+
+    text-align: center;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 16px;
+  }
+  header::before {
+    background: url("https://source.unsplash.com/user/erondu/1600x900")
+      no-repeat center center/cover;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    width: 500px;
+    height: 400px;
+  }
+  nav::before {
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    width: 500px;
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  li {
+    font-size: 20px;
+    width: 70px;
+  }
+  section {
+    position: relative;
+    top: 0px;
+    width: 380px;
+    right: 170px;
+    justify-content: center;
+
+    text-align: center;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+  header::before {
+    background: url("https://source.unsplash.com/user/erondu/1600x900")
+      no-repeat center center/cover;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    width: 900px;
+    height: 400px;
+  }
+  nav::before {
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    width: 800px;
+    height: 90px;
+  }
+}
+.our {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  top: -25px;
+  font-size: 34px;
+}
+
+.container {
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 40px;
+  /* background-color: rgb(199, 163, 64); */
+}
+.box {
+  border: 4px solid rgb(4, 110, 129);
+  border-radius: 20px;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: 20px;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  text-align: center;
+  background-color: rgba(67, 119, 121, 0.2);
+}
+.box img {
+  width: 130px;
+  height: 130px;
+  /* border: 2px solid rgb(245, 234, 234); */
+  position: relative;
+  left: 10px;
+  bottom: 0px;
+  /* border-radius: 100px; */
+}
+
+.heading {
+  font-size: 25px;
+  padding: 15px;
+}
+
+.heading + p {
+  font-size: 16px;
+  padding: 16px;
+}
+
+.clients {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  position: relative;
+  top: 40px;
+  /* border: 2px solid rgb(0, 0, 0); */
+  height: 350px;
+}
+.clients::before {
+  background: url("logo back2.jpeg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.3;
+  width: 100%;
+  height: 350px;
+}
+.clients h1 {
+  position: relative;
+  top: 30px;
+}
+.clients img {
+  position: relative;
+  top: 90px;
+  width: 90px;
+}
+.Contact {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.Contact::before {
+  background: url("contact back2.jpeg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: -37px;
+  left: 0px;
+  opacity: 0.3;
+  width: 100%;
+  height: 520px;
+}
+.Contact h2 {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  right: 180px;
+}
+input[type] {
+  width: 500px;
+  height: 20px;
+  position: relative;
+  top: -28px;
+}
+#same {
+  position: relative;
+  right: 225px;
+}
+#same1 {
+  position: relative;
+  right: 222px;
+}
+#same3 {
+  position: relative;
+  right: 210px;
+}
+
+button {
+  width: 500px;
+  height: 25px;
+  position: relative;
+  bottom: 20px;
+  color: white;
+  background-color: rgb(226, 7, 7);
+}
